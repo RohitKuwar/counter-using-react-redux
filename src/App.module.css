@@ -1,12 +1,22 @@
+h1 {
+  text-align: center;
+}
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 150px;
+}
+.container .counter {
+  color: limegreen;
 }
 .container button {
   padding: 10px;
   margin-left: 5px;
+  background-color: lightcoral;
+  color: red;
+  font-weight: 600;
+  border: none;
   cursor: pointer;
 }

@@ -5,7 +5,12 @@ const incDec = (state = initialState, action) => {
     case "INCREMENT":
       return state + 1;
     case "DECREMENT":
-      return state - 1;
+      switch(state){
+        case 0:
+          return 0;
+        default:
+          return state - 1;
+      };
     default:
       return state;
   }
